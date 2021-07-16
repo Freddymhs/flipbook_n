@@ -75,11 +75,11 @@ var turn = {
 
 //                } );
 document.addEventListener('swiped-left', function(e) {
-    alert('eft')
+ $(".book").turn('previous');
 });
 
 document.addEventListener('swiped-right', function(e) {
-    alert('right')
+   $(".book").turn('next');
 });
 
 
