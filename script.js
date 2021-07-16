@@ -86,9 +86,9 @@ document.addEventListener('swiped-up', function(e) {
     alert(e.target)
 });
 
-document.getElementById('myBox').addEventListener('swiped-down', function(e) {
-   alert(e.target)
-});
+// document.getElementById('myBox').addEventListener('swiped-down', function(e) {
+//    alert(e.target)
+// });
 // iniciar turnjs
 turn.init('book');
 
