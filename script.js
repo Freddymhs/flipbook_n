@@ -53,10 +53,10 @@ var turn = {
       acceleration: true,
       	// width: 400,
    	// height: 300,
-   	autoCenter: true,
+   	// autoCenter: true,
      display:'single',
-        zoom: 0,
-     turnCorners: "bl,br,tl,tr,l.r"
+        // zoom: 0,
+    //  turnCorners: "bl,br,tl,tr,l.r"
     });
 
     
@@ -64,10 +64,29 @@ var turn = {
     document.body.className = 'hide-overflow';
   }
 };
-jQuery( ".page" ).on( "swiperight", function( event ) { 
-        // $(".book").turn('next');
+// jQuery( ".page" ).on( "swiperight", function( event ) { 
+//         // $(".book").turn('next');
+//         alert('derecha')
 
-               } );
+//                } );
+// jQuery( ".page" ).on( "swipeleft", function( event ) { 
+//         // $(".book").turn('previous');
+//         alert('izquierda')
+
+//                } );
+document.addEventListener('swiped-left', function(e) {
+    alert('eft')
+});
+
+document.addEventListener('swiped-right', function(e) {
+    alert('right')
+});
+
+
+// 
+// 
+// 
+// 
 
 
 // document.getElementById('myBox').addEventListener('swiped-down', function(e) {
