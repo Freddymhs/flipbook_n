@@ -64,18 +64,31 @@ var turn = {
     document.body.className = 'hide-overflow';
   }
 };
-jQuery( window ).on( "swiperight", function( event ) { 
+jQuery( ".page" ).on( "swiperight", function( event ) { 
         // $(".book").turn('next');
         alert('derecha')
 
                } );
-jQuery( window ).on( "swipeleft", function( event ) { 
+jQuery( ".page" ).on( "swipeleft", function( event ) { 
         // $(".book").turn('previous');
         alert('izquierda')
 
                } );
+document.addEventListener('swiped-left', function(e) {
+    alert(e.target)
+});
 
+document.addEventListener('swiped-right', function(e) {
+    alert(e.target)
+});
 
+document.addEventListener('swiped-up', function(e) {
+    alert(e.target)
+});
+
+document.getElementById('myBox').addEventListener('swiped-down', function(e) {
+   alert(e.target)
+});
 // iniciar turnjs
 turn.init('book');
 
