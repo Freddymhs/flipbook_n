@@ -64,7 +64,10 @@ var turn = {
     document.body.className = 'hide-overflow';
   }
 };
-
+jQuery( window ).on( "click", function( event ) { 
+        $(".book").turn('next');
+        // alert('x')
+               } );
 
 
 

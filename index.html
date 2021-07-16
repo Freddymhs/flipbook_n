@@ -23,21 +23,24 @@
     </div>
   </div>
 
-  <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
-  <script type="text/javascript" src="./turn.js"></script>
-  <script type="text/javascript" src="./script.js"></script>
+  <script type="text/javascript" src="./jquery183.js"></script> <!-- jquery necesario -->
+  <script type="text/javascript" src="./turn.js"></script> <!-- turnjs 4 necesario -->
+  <script type="text/javascript" src="./script.js"></script> <!-- personalizado obtenido desde un codpen -->
+  <!-- posibles funciones -->
   <script>
-    $(function () {
-      // Bind the swipeleftHandler callback function to the swipe event on div.box
-      $(".book-wrapper").on("swipeleft", swipeleftHandler);
+    // $(function () {
+    //   // Bind the swipeleftHandler callback function to the swipe event on div.box
+    //   // $(".book-wrapper").on("swipeleft", swipeleftHandler);
+    //   $(".book-wrapper").on("click", swipeleftHandler);
 
-      // Callback function references the event target and adds the 'swipeleft' class to it
-      function swipeleftHandler(event) {
-        // $(event.target).addClass("swipeleft");
-        alert('xd')
-        console.log('ss')
-      }
-    });
+    //   // Callback function references the event target and adds the 'swipeleft' class to it
+    //   function swipeleftHandler(event) {
+    //     $(event.target).turn('peel', 'br');
+    //     // $(event.target).addClass("swipeleft");
+    //     alert('xd')
+    //     console.log('ss')
+    //   }
+    // });
   </script>
 
 </body>
