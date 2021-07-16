@@ -51,10 +51,10 @@ var turn = {
       // agrega tus propiedades
       gradients: true,
       acceleration: true,
-   	autoCenter: true,
-     display:'single',
-        zoom: 0,
-     turnCorners: "bl,br,tl,tr,l.r"
+   	// autoCenter: true,
+    //  display:'single',
+    //     zoom: 0,
+    //  turnCorners: "bl,br,tl,tr,l.r"
     });
 
     
