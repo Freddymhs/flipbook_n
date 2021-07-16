@@ -28,6 +28,24 @@
   <script type="text/javascript" src="./script.js"></script> <!-- personalizado obtenido desde un codpen -->
   <!-- posibles funciones -->
   <script>
+    let touchstartX = 0;
+    let touchendX = 0;
+
+    const slider = document.getElementById('.book');
+
+    function handleGesture() {
+      if (touchendX < touchstartX) alert('swiped left!');
+      if (touchendX > touchstartX) alert('swiped right!');
+    }
+
+    slider.addEventListener('touchstart', e => {
+      touchstartX = e.changedTouches[0].screenX;
+    });
+
+    slider.addEventListener('touchend', e => {
+      touchendX = e.changedTouches[0].screenX;
+      handleGesture();
+    });
     // $(function () {
     //   // Bind the swipeleftHandler callback function to the swipe event on div.box
     //   // $(".book-wrapper").on("swipeleft", swipeleftHandler);

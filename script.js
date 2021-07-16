@@ -89,24 +89,7 @@ document.addEventListener('swiped-up', function(e) {
 // 
 // 
 // 
-let touchstartX = 0;
-let touchendX = 0;
 
-const slider = document.getElementById('.book');
-
-function handleGesture() {
-  if (touchendX < touchstartX) alert('swiped left!');
-  if (touchendX > touchstartX) alert('swiped right!');
-}
-
-slider.addEventListener('touchstart', e => {
-  touchstartX = e.changedTouches[0].screenX;
-});
-
-slider.addEventListener('touchend', e => {
-  touchendX = e.changedTouches[0].screenX;
-  handleGesture();
-});
 
 // document.getElementById('myBox').addEventListener('swiped-down', function(e) {
 //    alert(e.target)
