@@ -64,11 +64,14 @@ var turn = {
     document.body.className = 'hide-overflow';
   }
 };
-jQuery( window ).on( "click", function( event ) { 
+jQuery( window ).on( "swiperight", function( event ) { 
         $(".book").turn('next');
-        // alert('x')
-               } );
 
+               } );
+jQuery( window ).on( "swipeleft", function( event ) { 
+        $(".book").turn('previous');
+
+               } );
 
 
 // iniciar turnjs
