@@ -25,13 +25,14 @@
 
   <script type="text/javascript" src="./jquery183.js"></script> <!-- jquery necesario -->
   <script type="text/javascript" src="./turn.js"></script> <!-- turnjs 4 necesario -->
+  <script type="text/javascript" src="./swipe.js"></script> <!-- personalizado obtenido desde un codpen -->
   <script type="text/javascript" src="./script.js"></script> <!-- personalizado obtenido desde un codpen -->
   <!-- posibles funciones -->
   <script>
     let touchstartX = 0;
     let touchendX = 0;
 
-    const slider = document.getElementById('.book');
+    const slider = document.getElementById('book');
 
     function handleGesture() {
       if (touchendX < touchstartX) alert('swiped left!');
