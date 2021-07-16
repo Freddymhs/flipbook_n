@@ -64,44 +64,20 @@ var turn = {
     document.body.className = 'hide-overflow';
   }
 };
-// jQuery( ".page" ).on( "swiperight", function( event ) { 
-//         // $(".book").turn('next');
-//         alert('derecha')
 
-//                } );
-// jQuery( ".page" ).on( "swipeleft", function( event ) { 
-//         // $(".book").turn('previous');
-//         alert('izquierda')
 
-//                } );
-document.addEventListener('swiped-left', function(e) {
-
+document.querySelector('.book-wrapper').addEventListener('swiped-left',function(e) {
   $("#book").turn('next');
-});
-
-document.addEventListener('swiped-right', function(e) {
+  console.log(e.target); // element that was swiped
+  console.log(e.detail); // event data { dir: 'down', xStart: 196, xEnd: 230, yStart: 196, yEnd: 4 }
+})
+document.querySelector('.book-wrapper').addEventListener('swiped-right',function(e) {
    $("#book").turn('previous');
-});
+   console.log(e.target); // element that was swiped
+  console.log(e.detail); // event data { dir: 'down', xStart: 196, xEnd: 230, yStart: 196, yEnd: 4 }
+})
 
 
-// 
-// 
-// 
-// 
 
-
-// document.getElementById('myBox').addEventListener('swiped-down', function(e) {
-//    alert(e.target)
-// });
-// iniciar turnjs
 turn.init('book');
 
-
-// jQuery( window ).on( "swipeleft", function( event ) { 
-//         $('#flipbook').turn('next');
-//                } );
-
-
-// jQuery( window ).on( "swiperight", function( event ) { 
-//         $('#flipbook').turn('previous');
-//                } );

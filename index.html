@@ -8,9 +8,10 @@
   <link rel="stylesheet" href="./estilos.css">
   <title>Document</title>
 </head>
+<!-- data-swipe-threshold="100" data-swipe-timeout="250" -->
 
-<body data-swipe-threshold="100" data-swipe-timeout="250">
-  <div class="book-wrapper">
+<body data-swipe-threshold="20" data-swipe-timeout="500" data-swipe-ignore="false">
+  <div class="book-wrapper" style="height:800px; width:600px;">
     <div class="book-container">
       <div class="book" id="book">
         <div class="page " style="background-color: lightcoral;">portada de pdf</div>
@@ -24,9 +25,8 @@
   </div>
 
   <script type="text/javascript" src="./jquery183.js"></script> <!-- jquery necesario -->
-
   <script type="text/javascript" src="./turn.js"></script> <!-- turnjs 4 necesario -->
-  <script type="text/javascript" src="./swipe.js"></script> <!-- personalizado obtenido desde un codpen -->
+  <script type="text/javascript" src="./swipe.js"></script> <!-- https://github.com/john-doherty/swiped-events -->
   <script type="text/javascript" src="./script.js"></script> <!-- personalizado obtenido desde un codpen -->
   <!-- posibles funciones -->
 
