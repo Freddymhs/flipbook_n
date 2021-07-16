@@ -24,42 +24,26 @@
   </div>
 
   <script type="text/javascript" src="./jquery183.js"></script> <!-- jquery necesario -->
+  <script type="text/javascript" src="./mobilejquery.js"></script> <!-- jquery necesario -->
   <script type="text/javascript" src="./turn.js"></script> <!-- turnjs 4 necesario -->
   <script type="text/javascript" src="./swipe.js"></script> <!-- personalizado obtenido desde un codpen -->
   <script type="text/javascript" src="./script.js"></script> <!-- personalizado obtenido desde un codpen -->
   <!-- posibles funciones -->
   <script>
-    let touchstartX = 0;
-    let touchendX = 0;
+    $(function () {
+      // Bind the swipeHandler callback function to the swipe event on div.box
+      $(".book").on("swipe", swipeHandler);
 
-    const slider = document.getElementById('book');
+      // Callback function references the event target and adds the 'swipe' class to it
+      function swipeHandler(event) {
+        alert('swipe sobre .book')
+        alert('swipe sobre .book')
+        alert('swipe sobre .book')
+        alert('swipe sobre .book')
 
-    function handleGesture() {
-      if (touchendX < touchstartX) alert('swiped left!');
-      if (touchendX > touchstartX) alert('swiped right!');
-    }
-
-    slider.addEventListener('touchstart', e => {
-      touchstartX = e.changedTouches[0].screenX;
+        // $(event.target).addClass("swipe");
+      }
     });
-
-    slider.addEventListener('touchend', e => {
-      touchendX = e.changedTouches[0].screenX;
-      handleGesture();
-    });
-    // $(function () {
-    //   // Bind the swipeleftHandler callback function to the swipe event on div.box
-    //   // $(".book-wrapper").on("swipeleft", swipeleftHandler);
-    //   $(".book-wrapper").on("click", swipeleftHandler);
-
-    //   // Callback function references the event target and adds the 'swipeleft' class to it
-    //   function swipeleftHandler(event) {
-    //     $(event.target).turn('peel', 'br');
-    //     // $(event.target).addClass("swipeleft");
-    //     alert('xd')
-    //     console.log('ss')
-    //   }
-    // });
   </script>
 
 </body>

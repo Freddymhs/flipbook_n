@@ -66,29 +66,8 @@ var turn = {
 };
 jQuery( ".page" ).on( "swiperight", function( event ) { 
         // $(".book").turn('next');
-        alert('derecha')
 
                } );
-jQuery( ".page" ).on( "swipeleft", function( event ) { 
-        // $(".book").turn('previous');
-        alert('izquierda')
-
-               } );
-document.addEventListener('swiped-left', function(e) {
-    alert(e.target)
-});
-
-document.addEventListener('swiped-right', function(e) {
-    alert(e.target)
-});
-
-document.addEventListener('swiped-up', function(e) {
-    alert(e.target)
-});
-// 
-// 
-// 
-// 
 
 
 // document.getElementById('myBox').addEventListener('swiped-down', function(e) {
