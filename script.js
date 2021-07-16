@@ -65,11 +65,13 @@ var turn = {
   }
 };
 jQuery( window ).on( "swiperight", function( event ) { 
-        $(".book").turn('next');
+        // $(".book").turn('next');
+        alert('derecha')
 
                } );
 jQuery( window ).on( "swipeleft", function( event ) { 
-        $(".book").turn('previous');
+        // $(".book").turn('previous');
+        alert('izquierda')
 
                } );
 
